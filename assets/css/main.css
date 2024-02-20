@@ -1,11 +1,11 @@
 @charset "UTF-8";
 :root {
-  --bs-blue:#0d6efd;
-  --bs-indigo:#6610f2;
+  --bs-blue:#070f5a;
+  --bs-indigo:#070f5a;
   --bs-purple:#6f42c1;
   --bs-pink:#d63384;
   --bs-red:#dc3545;
-  --bs-orange:#fd7e14;
+  --bs-orange:#fd630b;
   --bs-yellow:#ffc107;
   --bs-green:#198754;
   --bs-teal:#20c997;
@@ -23,7 +23,7 @@
   --bs-gray-700:#495057;
   --bs-gray-800:#343a40;
   --bs-gray-900:#212529;
-  --bs-primary:#0d6efd;
+  --bs-primary:#070f5a;
   --bs-secondary:#6c757d;
   --bs-success:#198754;
   --bs-info:#0dcaf0;
@@ -62,8 +62,8 @@
   --bs-border-radius-xl:1rem;
   --bs-border-radius-2xl:2rem;
   --bs-border-radius-pill:50rem;
-  --bs-link-color:#0d6efd;
-  --bs-link-hover-color:#0a58ca;
+  --bs-link-color:#070f5a;
+  --bs-link-hover-color:#070f5a;
   --bs-code-color:#d63384;
   --bs-highlight-bg:#fff3cd;
 }
