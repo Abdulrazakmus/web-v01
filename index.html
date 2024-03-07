@@ -6,6 +6,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Online Bootstrap & Scripts -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+   <!-- Online Bootstrap Scripts-->
+
+
     <!--twitter og-->
     <meta name="twitter:site" content="@themetags" />
     <meta name="twitter:creator" content="@themetags" />
@@ -101,13 +107,12 @@
                         <div class="col-md-6">
                             <div class="topbar-right text-end">
                                 <a href="#"><i class="fab fa-whatsapp"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#"><i class="fab fa-instagram"></i></a>
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
                                 <a href="#"><i class="fab fa-linkedin"></i></a>
                                 <a href="login.html">Sign in</a>
-                                <a href="signup.html">Sign up</a>
+                                <!-- <a href="signup.html">Sign up</a> -->
                             </div>
                         </div>
                     </div>
@@ -228,9 +233,82 @@
 
                             <div class="col-xl-2 col-lg-3 col-6">
                                 <div class="header-right d-flex align-items-center justify-content-end">
+
+
+                                    <!-- Get Quote Button -->
+                                  
+                                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#formModal">
+                                        <b>Get Quote</b>
+                                    </button>
+                                    <!-- Get Quote Button -->
+
+
+                                    <!-- Modal Form -->
+                                    <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="ModalLabel">Request Quotation</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+
+                                                <!-- Modal Body -->
+
+                                                <div class="modal-body">
+                                                    <form id="customerForm">
+                                                        <div class="form-group">
+                                                            <label for="customerName">Name:</label>
+                                                            <input type="text" class="form-control" id="customerName" name="customerName" required placeholder="Enter your name here">
+                                                        </div>
+                                                
+                                                        <div class="form-group">
+                                                            <label for="customerLocation">Location:</label>
+                                                            <input type="text" class="form-control" id="customerLocation" name="customerLocation" required placeholder="Enter your location here">
+                                                        </div>
+                                                
+                                                        <div class="form-group">
+                                                            <label for="serviceType">Type of Service:</label>
+                                                            <select class="form-control" id="serviceType" name="serviceType" required>
+                                                                <option value="option1">Option 1</option>
+                                                                <option value="option2">Option 2</option>
+                                                                <option value="option3">Option 3</option>
+                                                                <!-- Add more options as needed -->
+                                                            </select>
+                                                        </div>
+                                                
+                                                        <div class="form-group">
+                                                            <label for="contactInfo">Phone Number or Email:</label>
+                                                            <input type="text" class="form-control" id="contactInfo" name="contactInfo" required placeholder="Enter your phone number or email here">
+                                                        </div>
+                                                
+                                                        <div class="form-group">
+                                                            <label for="description">Description:</label>
+                                                            <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+                                                        </div>
+                                                
+                                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                                    </form>
+                                                </div>
+                                                
+
+                                                <!-- Modal Body -->
+
+                                                <!-- <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="submit" class="btn btn-primary ml-auto">Submit</button>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Modal Form -->
                                    
+
+                                    
                                     <div class="product-cart next">
-                                        <a href="#">
+                                        <a href="https://www.hasnetict.com/onlineshop/">
                                             <svg width="16" height="16" viewBox="0 0 17 21" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -434,7 +512,7 @@
                                     </mark></p>
                             <div class="hero-btns mt-5">
                                 <a href="#get-started" class="template-btn primary-btn me-4">Get Started</a>
-                                <a href="#" class="template-btn primary-btn me-4">Shop Now</a>
+                                <a href="https://www.hasnetict.com/onlineshop/" class="template-btn primary-btn me-4">Shop Now</a>
                             </div>
                         </div>
                     </div>
@@ -1277,6 +1355,13 @@
 
     </div>
     <!-- main content wrapper ends -->
+
+<!-- Modal Scripts -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 
 
     <!--build:js-->
