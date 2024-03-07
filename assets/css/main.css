@@ -91,6 +91,74 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
+/* For Slider  */
+.swiper-slide {
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.slide-content {
+  max-width: 600px;
+  margin: auto;
+}
+
+.slide-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.slide-description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.explore-btn,
+.read-more-btn {
+  margin-top: 15px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.swiper-slide h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.swiper-slide p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.swiper-slide .btn-container {
+  display: flex;
+  gap: 10px;
+}
+
+.swiper-slide button {
+  font-size: 1em;
+}
+/* Home slider */
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -25249,44 +25317,8 @@ button.swiper-pagination-bullet {
 /*! =======================================================
                       VERSION  11.0.2              
 ========================================================= */
-/*! =========================================================
- * bootstrap-slider.js
- *
- * Maintainers:
- *		Kyle Kemp
- *			- Twitter: @seiyria
- *			- Github:  seiyria
- *		Rohit Kalkur
- *			- Twitter: @Rovolutionary
- *			- Github:  rovolution
- *
- * =========================================================
- *
- * bootstrap-slider is released under the MIT License
- * Copyright (c) 2019 Kyle Kemp, Rohit Kalkur, and contributors
- * 
- * Permission is hereby granted, free of charge, to any person
- * obtaining a copy of this software and associated documentation
- * files (the "Software"), to deal in the Software without
- * restriction, including without limitation the rights to use,
- * copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the
- * Software is furnished to do so, subject to the following
- * conditions:
- * 
- * The above copyright notice and this permission notice shall be
- * included in all copies or substantial portions of the Software.
- * 
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
- * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
- * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
- * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
- * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
- * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
- * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
- * OTHER DEALINGS IN THE SOFTWARE.
- *
- * ========================================================= */
+
+ 
 .slider {
   display: inline-block;
   vertical-align: middle;
