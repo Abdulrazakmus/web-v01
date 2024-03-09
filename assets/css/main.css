@@ -89,11 +89,12 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
 }
 
 /* For Slider  */
 .swiper-slide {
-  width: 100vw;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -6070,10 +6071,12 @@ textarea.form-control-lg {
   outline: 0;
 }
 
+
+/* Modal Css I Made changes */
 .modal-backdrop {
-  --bs-backdrop-zindex:1050;
+  --bs-backdrop-zindex:1;
   --bs-backdrop-bg:#000;
-  --bs-backdrop-opacity:0.5;
+  --bs-backdrop-opacity:0.3;
   position: fixed;
   top: 0;
   left: 0;
