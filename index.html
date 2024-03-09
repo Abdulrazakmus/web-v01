@@ -240,29 +240,64 @@
                                     <!-- Get Quote Button -->
                                   
                                     <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                      Get Quote
+                                      <b>Get Quote</b>
+                                      
                                     </button>
 
                                     <!-- Get Quote Button -->
   
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <form id="customerForm" action="sendEmail.php" method="post">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="ModalLabel">Request Quote</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="customerForm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="location" class="form-label">Location:</label>
+                        <input type="text" class="form-control" id="location" placeholder="Enter your location" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="contactInfo" class="form-label">Email or Phone Number:</label>
+                        <input type="text" class="form-control" id="contactInfo" placeholder="Enter your email or phone number" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="serviceOption" class="form-label">Service Option:</label>
+                        <select class="form-select" id="serviceOption" required>
+                            <option value="" selected disabled>Select a service option</option>
+                            <option value="service2">Networking & Digital Security</option>
+                            <option value="service3">Graphic Design & Publish Printing</option>
+                            <option value="service1">Web Design, Hosting & Digital Marketing</option>
+                            <option value="service4">ICT Hardware Supply, Installation & Maintanance</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Additional Message:</label>
+                        <textarea class="form-control" id="message" placeholder="Enter your message"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
         </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
+</form>
+
                                     <!-- Modal Form -->
                                    
 
